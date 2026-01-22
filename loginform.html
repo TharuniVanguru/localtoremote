@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Enrollment</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Online Course Enrollment</h1>
+
+    <form>
+        <label>Student ID</label>
+        <input type="text" name="sid" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input type="password" name="pwd">
+
+        <label>Course</label>
+        <select name="course">
+            <option>--Select Course--</option>
+            <option>DevOps</option>
+            <option>Cloud Computing</option>
+            <option>AI and ML</option>
+            <option>Web Development</option>
+	</select>
+
+        <label>Mode of Learning</label>
+        <div class="radio-group">
+            <input type="radio" name="mode"> Online
+            <input type="radio" name="mode"> Offline
+        </div>
+
+        <label>Preferred Timings</label>
+        <input type="time" name="time">
+
+        <div class="buttons">
+            <input type="submit" value="Enroll">
+            <input type="reset" value="Cancel">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+
